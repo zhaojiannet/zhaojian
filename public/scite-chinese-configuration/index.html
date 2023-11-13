@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://fonts.font.im" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1c3c9aeb42b738e7">
+  <meta name="msvalidate.01" content="71508B31AB0C9FE58B8860C018542983">
+  <meta name="yandex-verification" content="8856d7a2e5bb6491">
+  <meta name="baidu-site-verification" content="1ZyjJ9c7gXTgBwMX">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.font.im/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.zhaojian.net","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="最近换 SciTE 编辑器了，非常适合我，这是我使用过的唯一能媲美 notepad++ 的编辑器了，因为就要常驻 Linux 了，所以准备转投 SciTE 了。用了几天还不错，不过配置的确很头疼，我的这个配置是参考了一下网上的，又修改了一下适合我自己的习惯。贴出来，有需要的就拿去吧。（后期会持续更新…）#SciTEGlobal.properties—— 全局配置文件，一般不去改动；#SciTEUs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SciTE 中文配置信息">
+<meta property="og:url" content="https://www.zhaojian.net/scite-chinese-configuration/index.html">
+<meta property="og:site_name" content="zhaoJian.Net">
+<meta property="og:description" content="最近换 SciTE 编辑器了，非常适合我，这是我使用过的唯一能媲美 notepad++ 的编辑器了，因为就要常驻 Linux 了，所以准备转投 SciTE 了。用了几天还不错，不过配置的确很头疼，我的这个配置是参考了一下网上的，又修改了一下适合我自己的习惯。贴出来，有需要的就拿去吧。（后期会持续更新…）#SciTEGlobal.properties—— 全局配置文件，一般不去改动；#SciTEUs">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2012-08-08T02:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-23T04:18:32.000Z">
+<meta property="article:author" content="zhaoJian.Net">
+<meta property="article:tag" content="SciTE 中文">
+<meta property="article:tag" content="SciTE 中文配置信息">
+<meta property="article:tag" content="SciTE 使用">
+<meta property="article:tag" content="SciTE 配置">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://www.zhaojian.net/scite-chinese-configuration/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.zhaojian.net/scite-chinese-configuration/","path":"scite-chinese-configuration/","title":"SciTE 中文配置信息"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>SciTE 中文配置信息 | zhaoJian.Net</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70H136JFY6"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-70H136JFY6","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?ff869ab994a5c69697df116162829598"></script>
+
+
+
+
+
+  <script async defer data-website-id="b3d7e635-7153-4797-aa7a-e22d50f67eee" src="https://u.zhaojian.net/u.js"></script>
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/rss2.xml" title="zhaoJian.Net" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">zhaoJian.Net</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">热爱技术与旅行，18年互联网经验，行走141城市...</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zhaoJian.Net"
+      src="/images/zhaojian-avatar.png">
+  <p class="site-author-name" itemprop="name">zhaoJian.Net</p>
+  <div class="site-description" itemprop="description">zhaoJian.Net | 热爱技术与旅行，18年互联网经验，行走141城市...</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">85</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">252</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhaojiannet" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhaojiannet" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:admin@zhaojian.net" title="E-Mail → mailto:admin@zhaojian.net" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhaojian.net/about/" title="WeChat → https:&#x2F;&#x2F;www.zhaojian.net&#x2F;about&#x2F;" rel="noopener me"><i class="fab fa-weixin fa-fw"></i>WeChat</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhaojian.net/about/" title="QQ → https:&#x2F;&#x2F;www.zhaojian.net&#x2F;about&#x2F;" rel="noopener me"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/757118" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;757118" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/zhaoJianNet" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;zhaoJianNet" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.zhaojian.net/scite-chinese-configuration/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zhaojian-avatar.png">
+      <meta itemprop="name" content="zhaoJian.Net">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhaoJian.Net">
+      <meta itemprop="description" content="zhaoJian.Net | 热爱技术与旅行，18年互联网经验，行走141城市...">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="SciTE 中文配置信息 | zhaoJian.Net">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          SciTE 中文配置信息
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2012-08-08 10:00:00" itemprop="dateCreated datePublished" datetime="2012-08-08T10:00:00+08:00">2012-08-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>最近换 SciTE 编辑器了，非常适合我，这是我使用过的唯一能媲美 notepad++ 的编辑器了，因为就要常驻 Linux 了，所以准备转投 SciTE 了。<br>用了几天还不错，不过配置的确很头疼，我的这个配置是参考了一下网上的，又修改了一下适合我自己的习惯。<br>贴出来，有需要的就拿去吧。（后期会持续更新…）<br>#SciTEGlobal.properties<br>—— 全局配置文件，一般不去改动；<br>#SciTEUser.properties —— 用户配置文件，对全局配置要改动的地方，都写在这个文件里；<br>#SciTE.properties —— 本地配置文件，也就是针对当前目录的配置文件，会覆盖全局和用户配置文件；<br>#html.properties —— 特定文件类型的配置文件，比如 html.properties 就是专门针对网页文件的配置文件，au3.properties 是 AutoIt 的配置文件；<br>#参数中多数情况下值设成 1 表示启用某个功能，设成 0 表示不启用某个功能。<br>#支持中文字符 ++++++++++++++++++++++++++++<br>#支持中文 963 表示简体中文<br>code.page&#x3D;65001<br>output.code.page&#x3D;65001<br>#character.set&#x3D;134 不启用的话，在输出区中文可能会乱码<br>#character.set&#x3D;134<br>#Big5:code.page&#x3D;950<br>#UTF8:code.page&#x3D;65001<br>#全局参数 ++++++++++++++++++++++++++++<br>#软件工作目录<br>SciteDefaultHome&#x3D;D:\ 系统工具 \ 网页制作 \scite<br>#关闭文件时提示保存<br>are.you.sure&#x3D;1<br>#重新载入文档时提示<br>are.you.sure.on.reload&#x3D;1<br>#重新载入文档时保留还原信息<br>reload.preserves.undo&#x3D;1<br>#编译和运行时提示保存<br>#are.you.sure.for.build&#x3D;1<br>#检查文档是否已经被其他软件打开<br>check.if.already.open&#x3D;1<br>#显示最近打开的文件<br>save.recent&#x3D;1<br>#只打开一个文件时隐藏标签卡<br>tabbar.hide.one&#x3D;1<br>#最小化时缩小到系统托盘<br>minimize.to.tray&#x3D;1<br>#显示工具栏<br>toolbar.visible&#x3D;0<br>#显示状态栏<br>statusbar.visible&#x3D;1<br>#标题栏显示 1\2\3 三种方式显示当前编辑文件名和文件路径<br>title.full.path&#x3D;2<br>#显示当前 buffer 序号<br>title.show.buffers&#x3D;1<br>buffers&#x3D;100<br>#最小化到屏幕下方的任务栏。如果改成 1，就是最小到屏幕最右下角的托盘区域。<br>minimize.to.tray&#x3D;0<br>#scite 启动时 tab 栏可见<br>tabbar.visible&#x3D;1<br>#当只打开一篇文档时隐藏 tab 栏<br>tabbar.hide.one&#x3D;0<br>#tab 栏启用多行模式，同时打开较多文件时，多行模式比较方便<br>tabbar.multiline&#x3D;1<br>#打开文件路径为当前编辑文件相同目录<br>open.dialog.in.file.directory&#x3D;1<br>#将结果输出窗口放到下方<br>split.vertical&#x3D;0<br>#打开文件时打开的目录为当前操作文件所在目录。这个功能非常实用，否则有时文件目录很深，要打开一个文件，一级级点击进去。<br>open.dialog.in.file.directory&#x3D;1<br>#在输出区显示执行命令所用时间<br>time.commands&#x3D;1<br>#替换相关设置，0 时 () 要写成 ()。一般设成 1++++++++++++++++++++++++++++<br>find.replace.regexp.posix&#x3D;1<br>#打开替换高级开关，可以只搜索某个样式<br>find.replace.advanced&#x3D;1<br>#是否默认用正则表达式搜索<br>find.replace.regexp&#x3D;0<br>#默认搜索时 Wrap around<br>find.replace.wrap&#x3D;1<br>#也就是搜索框的 Transform. backslash expressions 开关<br>#打开这个开关，搜索时要用 \ 来表示 <br>find.replace.escapes&#x3D;0<br>find.replacewith.focus&#x3D;1<br>#通过搜索查找到的字符颜色（用半透明显示）<br>find.mark&#x3D;#F14687<br>#界面布局，字体，颜色等 ++++++++++++++++++++++++++++<br>#默认<br>style.<em>.32&#x3D;$(font.base),back:#cce8cf<br>#行号背景，前景，字体，你可以在用户配置文件里改动一下试试，立即能看到效果<br>style.</em>.33&#x3D;fore:#000000,back:#CCCCCC,$(font.base)<br>#括号 (‘, ‘)’, ‘[‘, ‘]‘, ‘{‘, 和 ‘} 高亮颜色<br>style.<em>.34&#x3D;fore:#0000FF,bold<br>#不匹配括号高亮颜色。这在写代码多层括号嵌套时很有用。<br>style.</em>.35&#x3D;fore::#009933,bold<br>#控制字符<br>style.<em>.36&#x3D;<br>#缩进线<br>style.</em>.37&#x3D;fore:#C0C0C0,back:#CCCCCC<br>#启用括号匹配检查<br>braces.check&#x3D;1<br>braces.sloppy&#x3D;1<br>#软件启动时左边距，上边距，宽，高。宽高设成 - 1 时表示窗口最大化<br>position.left&#x3D;0<br>position.top&#x3D;0<br>position.width&#x3D;-1<br>position.height&#x3D;-1<br>#当打开两个 scite 时，设成 1, 并 position.left&#x3D;0,position.width &#x3D; 屏幕宽度一半，这时两个 scite 实例就可以并列显示了。这在特殊情况下可能有用<br>position.tile&#x3D;1<br>#缩进空白可见<br>view.indentation.whitespace&#x3D;1<br>#设置空白符的前景色和背景色<br>whitespace.fore<br>whitespace.back<br>#每个空白缩进单元显示一条垂直线，修改后重启 Scite 文本编辑器生效。<br>view.indentation.guides&#x3D;1<br>highlight.indentation.guides&#x3D;1<br>#默认字体字号，这里使用了等宽字体<br>font.base&#x3D;font:Courier New,size:9<br>font.small&#x3D;font:Courier New,size:9<br>#选中代码字体、背景颜色及色彩透明度<br>selection.fore&#x3D;#000000<br>selection.back&#x3D;#000080<br>selection.alpha&#x3D;80<br>#闪烁光标的颜色<br>caret.fore&#x3D;#000080<br>#闪烁光标的宽度 1\2\3<br>caret.width&#x3D;2<br>#光标所在行背景色<br>caret.line.back&#x3D;#5ba52f<br>#缩进，换行，代码折叠 ++++++++++++++++++++++++++++<br>#启用括号匹配检查<br>braces.check&#x3D;1<br>braces.sloppy&#x3D;1<br>#tab 键缩进的字符数<br>tabsize&#x3D;4<br>#缩进字符数<br>indent.size&#x3D;4<br>#缩进使用 tab 键<br>use.tabs&#x3D;1<br>#缩进，就是自动保持前一行的缩进<br>#indent.auto&#x3D;1<br>#智能缩进，和上面的区别就是有反缩进<br>indent.automatic&#x3D;1<br>#代码缩进，比如大括号回车自动缩进<br>indent.opening&#x3D;1<br>#代码反缩进，同上<br>indent.closing&#x3D;1<br>#tab 键缩进<br>#tab.indents&#x3D;0<br>#自动换行开关，写代码一般不要打开自动换行<br>wrap&#x3D;1<br>#换行的风格，没用过<br>wrap.style&#x3D;2<br>#输出窗口自动换行<br>output.wrap&#x3D;1<br>#自动换行处的标记符<br>wrap.visual.flags&#x3D;0<br>#代码折叠开关，建议打开<br>fold&#x3D;1<br>#折叠指示，建议打开<br>fold.compact&#x3D;1<br>#折叠代码样式 1\2\3，2 比较好看<br>fold.symbols&#x3D;3<br>#代码折叠区的宽度<br>fold.margin.width&#x3D;16<br>#代码注释折叠<br>fold.comment&#x3D;1<br>#折叠预处理<br>fold.preprocessor&#x3D;1<br>#鼠标到达文件末尾行后滚动条可继续下移<br>end.at.last.line&#x3D;0<br>#显示行号<br>line.margin.visible&#x3D;1<br>#行号显示的位数，3 + 表示默认 3 位数，不够再加<br>line.margin.width&#x3D;3+<br>#行号缩进的宽度，最好不缩进<br>margin.width&#x3D;0<br>#长行指示<br>edge.column&#x3D;200<br>edge.mode&#x3D;0<br>edge.colour&#x3D;#F9F9F9<br>#设置错误行的前景色和背景色<br>error.marker.fore&#x3D;#0000A0<br>error.marker.back&#x3D;#DADAFF<br>#设置书签列的前景色，背景色和透明度<br>bookmark.fore&#x3D;#808000<br>bookmark.back&#x3D;#FFFFA0<br>#如果书签列被关闭，书签所在行将以指定透明度显示<br>bookmark.alpha&#x3D;100<br>#语法提示及自动完成 ++++++++++++++++++++++++++++<br>#除默认语法提示外，可自定义增加后缀名为 API 语法自动完成文件，$(SciteDefaultHome) 表示工作目录，建议在工作目录中新建 API 目录专门存放自动完成文件<br>api.<em>.asp&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;asp.api<br>#python<br>api.</em>.py&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;python.api<br>api.<em>.pyw&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;python.api<br>#php<br>api.</em>.php&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;php.api<br>#css<br>api.<em>.css&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;css.api<br>#java<br>api.</em>.js&#x3D;$(SciteDefaultHome)&#x2F;api&#x2F;java.api<br>#在文件内出现过的词都可以自动完成<br>autocompleteword.automatic&#x3D;1<br>#自动补全 xml 及 html 标签<br>xml.auto.close.tags&#x3D;1<br>#xml 和 html 文档标签大小写不敏感<br>html.tags.case.sensitive&#x3D;0<br>#编译错误定位到源代码<br>error.select.line&#x3D;1<br>#外部的扩展，打印和导出文档的时候有用 ++++++++++++++++++++++++++++<br>#export.keep.ext&#x3D;1（构建可执行程序支持）<br>#所见即所得，可以实时预览<br>export.html.wysiwyg&#x3D;1<br>#export.html.tabs&#x3D;1（HTML tab 键支持）<br>#export.html.folding&#x3D;1（HTML 折叠支持）<br>#HTML 旧风格支持<br>export.html.styleused&#x3D;1<br>#export.html.title.fullpath&#x3D;1（HTML 文件显示完整路径）<br>#export.rtf.tabs&#x3D;1（多文档 RTF 支持）<br>#export.rtf.font.face&#x3D;Arial（RTF 文档的默认字体）<br>#export.rtf.font.size&#x3D;9（同上）<br>#export.rtf.tabsize&#x3D;8（同上）<br>#输出 PDF 文档放大倍数<br>export.pdf.magnification&#x3D;0<br>#PDF 默认字体 Font: Courier, Helvetica or Times (Courier<br>line-wraps)<br>export.pdf.font&#x3D;Helvetica<br>#Page size (in points): width, height<br>#E.g. Letter 612,792; A4 595,842; maximum 14400,14400<br>#PDF 页面默认大小<br>export.pdf.pagesize&#x3D;595,842<br>#PDF 默认页边距 Margins (in points): left, right, top, bottom<br>export.pdf.margins&#x3D;72,72,72,72<br>#支持输出 XML<br>export.xml.collapse.spaces&#x3D;1<br>export.xml.collapse.lines&#x3D;1<br>#常用字符列表，留下英文和数字就行了，汉字感觉用不上 ++++++++++++++++++++++++++++<br>chars.alpha&#x3D;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<br>chars.numeric&#x3D;0123456789<br>#打开文件对话框的文件过滤配置，默认的文件类型是在 source.files 中定义的文件类型，把自己最常编辑的文件类型写到 source.files 中，如 <em>.php;</em>.html; 等 ++++++++++++++++++++++++++++<br>source.files&#x3D;<em>.asm;</em>.c;<em>.cc;</em>.cpp;<em>.cxx;</em>.cs;<em>.h;</em>.hh;<em>.hxx;</em>.hpp;<br><em>.idl;</em>.odl;<em>.rc;</em>.rc2;<em>.dlg;</em>.def;<br><em>.vb;</em>.vbs;<em>.bas;</em>.frm;<em>.cls;</em>.ctl;<br><em>.java;</em>.js;<em>.php;</em>.py;<em>.pl;</em>.rb;<em>.cgi;</em>.lua;<em>.conf;<br>make</em>;<em>.mak;<br><em>.properties;</em>.html;</em>.xml;<em>.iface;</em>.bat;<em>.e<br>if PLAT_WIN<br>all.files&#x3D;All Files (</em>.<em>)</em>.*<br>if PLAT_GTK<br>all.files&#x3D;All Files (<em>)<em>Hidden Files (.</em>).</em><br>open.filter&#x3D;<br>All Source$(source.files)<br>$(all.files)<br>$(filter.ada)<br>$(filter.conf)<br>$(filter.asm)<br>$(filter.asn1)<br>$(filter.ave)<br>$(filter.baan)<br>$(filter.bash)<br>$(filter.caml)<br>$(filter.cmake)<br>$(filter.cpp)<br>#$(filter.ch)<br>$(filter.css)<br>$(filter.d)<br>$(filter.eiffel)<br>$(filter.erlang)<br>$(filter.fortran)<br>$(filter.idl)<br>$(filter.inno)<br>$(filter.java)<br>$(filter.js)<br>$(filter.kix)<br>$(filter.lout)<br>$(filter.lua)<br>$(filter.matlab)<br>$(filter.post)<br>$(filter.mmixal)<br>$(filter.nncrontab)<br>$(filter.nsis)<br>$(filter.opal)<br>$(filter.pascal)<br>$(filter.perl)<br>$(filter.php)<br>$(filter.pov)<br>$(filter.prg)<br>$(filter.properties)<br>$(filter.ps)<br>$(filter.python)<br>$(filter.ruby)<br>$(filter.sql)<br>$(filter.specman)<br>$(filter.tcl)<br>$(filter.tex)<br>$(filter.text)<br>$(filter.vb)<br>$(filter.web)<br>$(filter.yaml)<br>$(filter.verilog)<br>$(filter.vhdl)<br>#部分语言特别设置 ++++++++++++++++++++++++++++<br>#asp 的默认脚本语言，设成 1 时是 Java, 2 是 VB, 3 是 Python<br>asp.default.language&#x3D;2<br>#Python 用的，你不用 Python 编程语言的话，这条不用管，大概是缩进对齐用的<br>tab.timmy.whinge.level<br>#输出区的位置，大小，及启动 scite 文本编辑器时输出区是否隐藏 ++++++++++++++++++++++++++++<br>#输出区在下方<br>split.vertical&#x3D;0<br>#output.horizontal.size&#x3D;200<br>#output.vertical.size&#x3D;60<br>#output.initial.hide&#x3D;1<br>#执行命令前清空输出区的内容<br>clear.before.execute&#x3D;1<br>#文件尾留空，默认设置中，光标在文件最后一行时垂直滑动条无法再向下滚动，不符合使用习惯。<br>end.at.last.line&#x3D;0<br>#新建文件时的默认语言模块<br>default.file.ext&#x3D;.hmtl</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="zhaoJian.Net 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="zhaoJian.Net 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>zhaoJian.Net
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://www.zhaojian.net/scite-chinese-configuration/" title="SciTE 中文配置信息">https://www.zhaojian.net/scite-chinese-configuration/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/images/weixin-mp.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://weibo.com/757118">
+            <span class="icon">
+              <i class="fab fa-weibo"></i>
+            </span>
+
+            <span class="label">Weibo</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-tiktok"></i>
+            </span>
+
+            <span class="label">Douyin</span>
+          </span>
+
+          <img class="social-item-img" src="/images/douyin-p.png">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/zhaoJianNet">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/rss2.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/SciTE-%E4%B8%AD%E6%96%87/" rel="tag"># SciTE 中文</a>
+              <a href="/tags/SciTE-%E4%B8%AD%E6%96%87%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/" rel="tag"># SciTE 中文配置信息</a>
+              <a href="/tags/SciTE-%E4%BD%BF%E7%94%A8/" rel="tag"># SciTE 使用</a>
+              <a href="/tags/SciTE-%E9%85%8D%E7%BD%AE/" rel="tag"># SciTE 配置</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/wordpress-article-page-cannot-find-featured-image/" rel="prev" title="WordPress添加文章/页面找不到作为特色图像功能解决办法">
+                  <i class="fa fa-chevron-left"></i> WordPress添加文章/页面找不到作为特色图像功能解决办法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/windows8-administrator-cannot-open-xxx/" rel="next" title="Windows8无法使用内置管理员账户打开xx的解决办法">
+                  Windows8无法使用内置管理员账户打开xx的解决办法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">辽ICP备20000595号 </a>
+      <img src="https://www.beian.gov.cn/img/new/gongan.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21130302000106" rel="noopener" target="_blank">辽公网安备21130302000106号 </a>
+  </div>
+
+<div class="copyright">
+  &copy; 2009 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhaoJian.Net</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.15" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://www.zhaojian.net/scite-chinese-configuration/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":false,"envId":"https://zhaojian.zeabur.app","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
+
+</body>
+</html>
